@@ -1,0 +1,14 @@
+<mat-card>
+    <span>Agendar Cita</span>
+    <form [formGroup]="citaForm" (ngSubmit) ="onSubmit()" >
+        <mat-form-field class="crear-cita-field">
+            <input matInput placeholder="Fecha de la cita" formControlName="fechaCita">
+        </mat-form-field>
+        <mat-form-field class="crear-cita-field">
+            <input matInput placeholder="Hora de la cita" formControlName="horaCita">
+        </mat-form-field>
+    
+        <button mat-raised-button [disabled]="!citaForm.valid">Crear Nuevo</button>
+    
+    </form>
+    </mat-card>

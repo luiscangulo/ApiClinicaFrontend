@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+    <button mat-button routerLink='/'>Inicio</button>
+    <button mat-button *ngIf="auth.isAutenticado" routerLink='/pacientes'>Pacientes</button>
+    <button mat-button routerLink='/agendar-cita'>Agendar Cita</button>
+    <button mat-button *ngIf="auth.isAutenticado" routerLink='/crear-paciente'>Nuevo Paciente</button>
+    <button mat-button *ngIf="auth.isAutenticado" routerLink='/crear-historial'>Nueva ficha de paciente</button>
+    <span style="flex: 1 1 auto"></span>
+    <button mat-button *ngIf="auth.isAutenticado">Bienvenido {{auth.getUsername}}</button>
+    <button mat-button *ngIf="auth.isAutenticado" (click)="auth.logout()">Logout</button>
+    <button mat-button *ngIf="!auth.isAutenticado" routerLink="/register">Registrarse</button>
+    <button mat-button *ngIf="!auth.isAutenticado" routerLink="/login">Login</button>
+</mat-toolbar>

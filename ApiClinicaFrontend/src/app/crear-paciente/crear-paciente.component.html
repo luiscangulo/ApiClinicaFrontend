@@ -1,0 +1,35 @@
+<mat-card>
+<span>Crear Nuevo Paciente</span>
+<form [formGroup]="pacienteForm" (ngSubmit) ="onSubmit()" >
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Nombres del Paciente" formControlName="nombres">
+    </mat-form-field>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Apellido Paterno del Paciente" formControlName="apellidoPaterno">
+    </mat-form-field>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Apellido Materno del Paciente" formControlName="apellidoMaterno">
+    </mat-form-field>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Edad del Paciente" formControlName="edad">
+    </mat-form-field>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Ci del Paciente" formControlName="ci">
+    </mat-form-field>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Celular del Paciente" formControlName="celular">
+    </mat-form-field>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Telefono del Paciente" formControlName="telefono">
+    </mat-form-field>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Email del Paciente" formControlName="email">
+    </mat-form-field>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Direccion del Paciente" formControlName="direccion">
+    </mat-form-field>
+
+    <button mat-raised-button [disabled]="!pacienteForm.valid">Crear Nuevo</button>
+
+</form>
+</mat-card>

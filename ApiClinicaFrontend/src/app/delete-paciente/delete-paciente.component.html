@@ -1,0 +1,51 @@
+<mat-card>
+
+<mat-card-header>
+    <mat-card-title>Esta seguro de eliminar este paciente?</mat-card-title>
+</mat-card-header>
+
+<mat-card-content>
+    <mat-list>
+        <mat-list-item>
+            <b>Nombres: {{paciente.nombres}}</b>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <b>Apellido Paterno: {{paciente.apellidoPaterno}}</b>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <b>Apellido Materno: {{paciente.apellidoMaterno}}</b>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <b>Edad: {{paciente.edad}}</b>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <b>Ci: {{paciente.ci}}</b>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <b>Celular: {{paciente.celular}}</b>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <b>Telefono: {{paciente.telefono}}</b>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <b>Email: {{paciente.email}}</b>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <b>Direccion: {{paciente.direccion}}</b>
+        </mat-list-item>
+    </mat-list>
+</mat-card-content>
+
+<mat-card-actions>
+    <button mat-flat-button (click)="cancel()">Cancelar</button>
+    <button mat-raised-button color="warn" (click)="confirmar()">Confirmar</button>
+</mat-card-actions>
+</mat-card>

@@ -1,0 +1,45 @@
+<h2 mat-dialog-title>Actualizar Paciente</h2>
+
+<mat-dialog-content [formGroup]="form">
+
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Nombres del Paciente" formControlName="nombres">
+    </mat-form-field>
+    <br/>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Apellido Paterno del Paciente" formControlName="apellidoPaterno">
+    </mat-form-field>
+    <br/>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Apellido Materno del Paciente" formControlName="apellidoMaterno">
+    </mat-form-field>
+    <br/>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Edad del Paciente" formControlName="edad">
+    </mat-form-field>
+    <br/>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Ci del Paciente" formControlName="ci">
+    </mat-form-field>
+    <br/>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Celular del Paciente" formControlName="celular">
+    </mat-form-field>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Telefono del Paciente" formControlName="telefono">
+    </mat-form-field>
+    <br/>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Email del Paciente" formControlName="email">
+    </mat-form-field>
+    <br/>
+    <mat-form-field class="crear-paciente-field">
+        <input matInput placeholder="Direccion del Paciente" formControlName="direccion">
+    </mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button" (click)="cerrar()">Cerrar</button>
+    <button class="mat-raised-button mat-primary" (click)="guardar()">Guardar</button>
+</mat-dialog-actions>

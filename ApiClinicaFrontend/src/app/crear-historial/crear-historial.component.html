@@ -1,0 +1,23 @@
+<mat-card>
+    <span>Crear Ficha de Historial</span>
+    <form [formGroup]="historialForm" (ngSubmit) ="onSubmit()" >
+        <mat-form-field class="crear-historial-field">
+            <input matInput placeholder="Alergia del Paciente" formControlName="alergia">
+        </mat-form-field>
+        <mat-form-field class="crear-historial-field">
+            <input matInput placeholder="Enfermedad del Paciente" formControlName="enfermedad">
+        </mat-form-field>
+        <mat-form-field class="crear-historial-field">
+            <input matInput placeholder="Tratamiento del Paciente" formControlName="tratamiento">
+        </mat-form-field>
+        <mat-form-field class="crear-historial-field">
+            <input matInput placeholder="Medicacion del Paciente" formControlName="medicacion">
+        </mat-form-field>
+        <mat-form-field class="crear-historial-field">
+            <input matInput placeholder="Prescripcion del Paciente" formControlName="prescripcion">
+        </mat-form-field>
+    
+        <button mat-raised-button [disabled]="!historialForm.valid">Crear Nuevo</button>
+    
+    </form>
+    </mat-card>
